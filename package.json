@@ -1,0 +1,26 @@
+{
+  "name": "facetune",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/samnurollahi/electron-facetune#readme",
+  "bugs": {
+    "url": "https://github.com/samnurollahi/electron-facetune/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samnurollahi/electron-facetune.git"
+  },
+  "license": "MIT",
+  "author": "sam",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "tailwind:setup": "npx @tailwindcss/cli -i ./views/style/input.css -o ./views/style/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "electron": "^39.1.0",
+    "tailwindcss": "^4.1.16"
+  }
+}
