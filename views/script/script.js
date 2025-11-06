@@ -1,5 +1,11 @@
 const video = document.getElementById("video");
 
+const music = [
+  { expression: "sad", name: "sad.mp3" },
+  { expression: "happy", name: "happy.mp3" },
+  { expression: "neutral", name: "neutral.mp3" },
+];
+
 window.addEventListener("DOMContentLoaded", async () => {
   navigator.mediaDevices.getUserMedia({ video: true }).then((stearm) => {
     video.srcObject = stearm;
