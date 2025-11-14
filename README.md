@@ -27,37 +27,10 @@ All processing happens locally — no video is uploaded or stored.
 
 <h2>🚀 Installation</h2>
 <pre>
-git clone https://github.com/&lt;your-username&gt;/facebeat.git
+git clone https://github.com/samnurollahi/electron-facetune/
 cd facebeat
 npm install
 npm start
-</pre>
-
-<h2>🎵 Mood–Music Mapping</h2>
-<p>You can configure which music plays for each emotion. Example <code>config.json</code>:</p>
-
-<pre>
-{
-  "mappings": {
-    "happy": ["assets/music/happy1.mp3"],
-    "sad": ["assets/music/sad1.mp3"],
-    "surprised": ["assets/music/surprised1.mp3"],
-    "neutral": ["assets/music/neutral1.mp3"]
-  },
-  "detection": {
-    "intervalMs": 800,
-    "confidenceThreshold": 0.6
-  }
-}
-</pre>
-
-<h2>📂 Project Structure</h2>
-<pre>
-/models            → face detection models
-/assets/music      → audio files
-main.js            → Electron main process
-renderer.js        → webcam + detection + UI
-config.json        → emotion → music mapping
 </pre>
 
 <h2>🔐 Privacy</h2>
