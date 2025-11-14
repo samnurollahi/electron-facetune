@@ -18,9 +18,31 @@
     "start": "electron .",
     "tailwind:setup": "npx @tailwindcss/cli -i ./views/style/input.css -o ./views/style/output.css --watch"
   },
+  "build": {
+    "appId": "com.sam.myapp",
+    "productName": "MyElectronApp",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "app.js",
+      "views/**/*",
+      "preloads/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "npmRebuild": false,
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.ico"
+    }
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.16",
-    "electron": "^39.1.0",
     "tailwindcss": "^4.1.16"
+  },
+  "devDependencies": {
+    "electron": "^39.1.0",
+    "electron-builder": "^26.0.12"
   }
 }
